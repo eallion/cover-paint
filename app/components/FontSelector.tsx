@@ -23,7 +23,7 @@ const fontList = [
 ];
 
 function FontSelector() {
-  const [selectedFont, setSelectedFont] = useState("Lexend");
+  const [selectedFont, setSelectedFont] = useState("Inter");
   const t = useTranslations("HomePage");
 
   const { setCoverFont } = useCoverFontState();

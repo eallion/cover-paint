@@ -6,10 +6,11 @@ import { Analytics } from "@vercel/analytics/react";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/app/components/providers/ThemeProvider";
 import Header from "@/app/components/Header";
-import { Lexend } from "next/font/google";
+import { Inter } from "next/font/google";
 import Footer from "@/app/components/Footer";
 
-const lexend = Lexend({ subsets: ["latin"] });
+// const lexend = Lexend({ subsets: ["latin"] });
+const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 type Props = {
   children: ReactNode;
@@ -80,7 +81,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${lexend.className} bg-slate-50 dark:bg-slate-950`}>
+      <body className={`${inter.className} bg-slate-50 dark:bg-slate-950`}>
         <Analytics />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system">

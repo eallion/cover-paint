@@ -66,23 +66,23 @@ const useCoverTypeState = create<CoverType>()((set) => ({
 }));
 
 const useBlogTitleState = create<BlogTitle>()((set) => ({
-  blogTitle: "How to build a website with Next.js and Tailwind CSS",
+  blogTitle: "《机会总是垂青于有准备的人！》",
   setBlogTitle: (val: string) => set(() => ({ blogTitle: val })),
 }));
 
 const useBlogAbstractState = create<BlogAbstract>()((set) => ({
   blogAbstract:
-    "A tutorial on creating a website using Next.js framework and styling it with Tailwind CSS.",
+    "大大的小蜗牛",
   setBlogAbstract: (val: string) => set(() => ({ blogAbstract: val })),
 }));
 
 const useBlogAuthorState = create<BlogAuthor>()((set) => ({
-  blogAuthor: "xiaole - Sep 26",
+  blogAuthor: "@eallion",
   setBlogAuthor: (val: string) => set(() => ({ blogAuthor: val })),
 }));
 
 const useAvatarImageState = create<AvatarImage>()((set) => ({
-  avatarImage: undefined,
+  avatarImage: '/assets/avatar.png',
   setAvatarImage: (val: string | undefined) =>
     set(() => ({ avatarImage: val })),
 }));
