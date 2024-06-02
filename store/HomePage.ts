@@ -66,7 +66,7 @@ const useCoverTypeState = create<CoverType>()((set) => ({
 }));
 
 const useBlogTitleState = create<BlogTitle>()((set) => ({
-  blogTitle: "《机会总是垂青于有准备的人！》",
+  blogTitle: "《机会总是垂青于有准备的人》",
   setBlogTitle: (val: string) => set(() => ({ blogTitle: val })),
 }));
 
